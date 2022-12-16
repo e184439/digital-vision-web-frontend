@@ -1,0 +1,81 @@
+<%- include('partials/header.ejs'); %>
+
+<%- include('partials/navbar.ejs'); %>
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="container mt-5 mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-12">
+            <div class="card admincard p-4">
+              <h1>Provide Further Information</h1>
+              <hr>
+              <form action="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="ClountryRegion" class="form-label">Payment Method</label>
+                      <select class="form-select" aria-label="Default select example" id="ClountryRegion">
+                        <option selected>Cash on Delivery</option>
+                        <option value="1">Pay By Card</option>
+                        <option value="2">Paypal</option>
+                        <option value="3">Liver or Kidney</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Card Number</label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Please Enter">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Card Holder Name</label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Please Enter">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Expired Date</label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="YY/MM">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">CCV</label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="****">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-check mt-2 mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Save card details
+                      </label>
+                      <h6> Your payment information is safe with us</h6>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-danger">Save & Confirm</button>
+                  </div>
+
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer.ejs'); %>

@@ -1,0 +1,123 @@
+.rating .fa-star {
+  color: gold;
+}
+
+.rating .rating-filter {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-grid .product {
+  height: 200px;
+  background-color: #fff;
+  position: relative;
+}
+
+.product-grid .product .add-to-wishlist {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.product-grid .product .add-to-cart {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.product-grid .product .details {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  font-size: 11px;
+  width: 80%;
+}
+
+.product-grid .product .details .product-rating {
+  color: gold;
+}
+
+.product-grid .product .product-image {
+  width: 180px;
+  margin: 10px 20px;
+}
+
+/*    conter    */
+/*CSS for incrementors begins*/
+[id=priceATC] {
+  float: left;
+  clear: left;
+  margin-top: -2px;
+  margin-bottom: 2px;
+}
+
+input[type=number] {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  outline: 0;
+  height: 32px;
+  width: 3em;
+  text-align: center;
+  border: 2px solid #e1e1e1;
+  margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.button1 {
+  margin-top: 2px;
+  margin-left: 6px;
+  float: left;
+  display: inline-block;
+  background: #AC796A;
+  border-radius: 3px;
+  border: 0;
+  height: 30px;
+  white-space: nowrap;
+  padding: 0 15px;
+  overflow: visible;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 29px;
+  text-indent: 0 !important;
+  text-shadow: none;
+  text-align: center !important;
+  color: white;
+  text-decoration: none !important;
+  -webkit-appearance: none;
+}
+
+.icon-minus-squared,
+.icon-plus-squared {
+  width: 30px;
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #AFD7D6;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font: bold 18px/30px "arial";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.off {
+  cursor: default;
+  opacity: .3;
+}
+
+.error {
+  float: left;
+  clear: left;
+}
+
+.admincard {
+  background-color: #EAF6FF;
+}

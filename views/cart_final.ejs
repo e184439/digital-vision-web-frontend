@@ -1,0 +1,161 @@
+<%- include('partials/header.ejs'); %>
+
+<%- include('partials/navbar.ejs'); %>
+
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-7">
+            <select name="sort_by" id="sort_by" class="form-select w-25 float-start me-3">
+                <option value="">Sort by: Featured</option>
+            </select>
+            <select name="category" id="category" class="form-select w-25 float-start me-3">
+                <option value="">Category</option>
+            </select>
+            <select name="category" id="category" class="form-select w-25 float-start">
+                <option value="">Brand</option>
+            </select>
+        </div>
+        <div class="col-lg-2 text-end">
+            <button type="button" class="btn btn-outline position-relative">
+                <i class="fa fa-heart"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <span class="visually-hidden">Wishlist</span>
+                </span>
+            </button>
+            <button type="button" class="btn btn-outline position-relative me-3">
+                <i class="fa fa-cart-shopping"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <span class="visually-hidden">Cart</span>
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="container mt-5 mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8">
+
+                        <div class="card p-4 mb-2">
+                            <h4>Billing Address</h4>
+                            <p>William B. Benefiel</p>
+                            <p>234 Main Street, Boralla,Colombo 09</p>
+                            <p>Colombo, Western Province, Sri Lanka 0090</p>
+                        </div>
+
+                        <div class="card p-4 mb-2 text-left">
+                            <P>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="">Select All</label>
+                            </P>
+                        </div>
+
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="images p-3">
+                                        <div class="text-center p-4"> 
+                                            <img id="main-image" src="images/magsafe.png" width="150" /> 
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="product p-4">                                        
+                                        <div class="mt-4 mb-3"> 
+                                            <h5 class="text-uppercase">Apple MagSafe Wireless 20W Charger For iPhone 13 14 Pro Max Fast Charging Type C For iPhone 8 X 11 12 Mini Quick Magnetic Charge</h5>
+                                            <div class="price d-flex flex-row align-items-center"> 
+                                                <span class="act-price">
+                                                    <h4>LKR 13,990.00</h4>
+                                                </span>
+                                            </div>
+                                        </div>                                   
+                                        <div class="cart mt-4 align-items-center">
+                                            <section id="buyBlock">
+                                                <span id="priceATC" class="quantity-up-down">
+                                                    <label>Qty</label>
+                                                    <span class="icon-minus-squared off">&ndash;</span>
+                                                    <input name="Quantity" type="number" value="0" id="Quantity" class="qty-field" min="1" max="12">
+                                                    <span class="icon-plus-squared">+</span>
+                                                </span>                                                
+                                            </section>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-1 p-4">
+                                    <div class="cart mt-4 align-items-center">                                            
+                                        <button class="btn btn-danger text-uppercase mb-2 ">Delete</button> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4">
+                            <h4>Summary</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Total Items Cost</h6>
+                                    <h6>Total Shipping</h6>
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <h6>LKR 13,999.00</h6>
+                                    <h6>Free</h6>                                    
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Total</h5>                                    
+                                </div>
+                                <div class="col-md-6 text-end">
+                                    <h5>LKR 13,999.00</h5>                                   
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                 <label for="PaymentMethod">Payment Method</label>
+                                 <select class="form-select" id="PaymentMethod" aria-label="Default select example">
+                                  <option selected>Select Payment Method</option>
+                                  <option value="1">Visa</option>
+                                  <option value="2">Master</option>
+                              </select>
+                              <button type="button" class="btn btn-secondary mt-3 w-100">Buy Now</button>
+                              <!-- Upon clicking 'Place Order', I confirm I have read and acknowledged All terms and policies. -->
+                              <div class="form-check mt-2">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Upon clicking 'Place Order', I confirm I have read and acknowledged All terms and policies.
+                                </label>
+                            </div>
+
+
+                        </div>                        
+                    </div>
+                </div>
+                <div class="card p-4 mt-2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img src="images/header-logo.png" alt="" width="80px">
+                                </div>
+                                <div class="col-md-12">
+                                    <p class="text-muted h6">Digital Vision keeps your information and payment safe</p>
+                                </div>
+                            </div>
+                        </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>    
+</div>
+
+<%- include('partials/footer.ejs'); %>
