@@ -13,6 +13,7 @@
         <option value="">Category</option>
       </select>
     </div>
+
     <div class="col-lg-2 text-end">
       <button type="button" class="btn btn-outline position-relative">
         <i class="fa fa-heart"></i>
@@ -80,23 +81,22 @@
 
         <div class="row">
           <div class="col">
-            <input type="number" aria-label="Min" class="form-control" min="0" step="1" placeholder="Min" />
+            <input type="text" aria-label="Min" class="form-control" min="0" step="1" placeholder="Min" />
           </div>
           <div class="col">
-            <input type="number" aria-label="Max" class="form-control" min="0" step="1" placeholder="Max" />
-          </div>
-          <div class="col">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-              Go
-            </button>
+            <input type="text" aria-label="Max" class="form-control" min="0" step="1" placeholder="Max" />
           </div>
         </div>
       </div>
 
       <div class="block mb-3">
+        <input type="text" class="form-control" id="filter-search-field" name="search" placeholder="Search">
+      </div>
+
+      <div class="block mb-3">
         <h6>Brands</h6>
 
-        <div class="side-filter-brands">
+        <div class="side-filter-brands" id="brands-sidebar">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
@@ -109,103 +109,12 @@
               HTC
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Apple
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Google
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Huawei
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Lenovo
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Acer
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              LG
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Motorola
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Nokia
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Palm
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              OPPO
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              RealMe
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Samsung
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Sony
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Vivo
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Xiaomi
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              OnePlus
-            </label>
-          </div>
         </div>
+      </div>
+      <div class="block mb-3">
+        <button class="btn btn-secondary w-100" id="filter_items">
+          Filter
+        </button>
       </div>
     </div>
     <div class="col-lg-9">
@@ -220,7 +129,7 @@
               <img src="/images/Group 1662.png">
             </a>
 
-            <img src="/images/magsafe-2-600x600 1.png" alt="" class="product-image">
+            <img src="/images/magsafe.png" alt="" class="product-image">
 
             <div class="details">
               <p>
@@ -247,7 +156,7 @@
               <img src="/images/Group 1662.png">
             </a>
 
-            <img src="/images/magsafe-2-600x600 1.png" alt="" class="product-image">
+            <img src="/images/magsafe.png" alt="" class="product-image">
 
             <div class="details">
               <p>
@@ -274,7 +183,7 @@
               <img src="/images/Group 1662.png">
             </a>
 
-            <img src="/images/magsafe-2-600x600 1.png" alt="" class="product-image">
+            <img src="/images/magsafe.png" alt="" class="product-image">
 
             <div class="details">
               <p>
@@ -301,7 +210,7 @@
               <img src="/images/Group 1662.png">
             </a>
 
-            <img src="/images/magsafe-2-600x600 1.png" alt="" class="product-image">
+            <img src="/images/magsafe.png" alt="" class="product-image">
 
             <div class="details">
               <p>
@@ -328,7 +237,7 @@
               <img src="/images/Group 1662.png">
             </a>
 
-            <img src="/images/magsafe-2-600x600 1.png" alt="" class="product-image">
+            <img src="/images/magsafe.png" alt="" class="product-image">
 
             <div class="details">
               <p>
@@ -355,7 +264,7 @@
               <img src="/images/Group 1662.png">
             </a>
 
-            <img src="/images/magsafe-2-600x600 1.png" alt="" class="product-image">
+            <img src="/images/magsafe.png" alt="" class="product-image">
 
             <div class="details">
               <p>
@@ -382,7 +291,7 @@
               <img src="/images/Group 1662.png">
             </a>
 
-            <img src="/images/magsafe-2-600x600 1.png" alt="" class="product-image">
+            <img src="/images/magsafe.png" alt="" class="product-image">
 
             <div class="details">
               <p>
@@ -409,7 +318,7 @@
               <img src="/images/Group 1662.png">
             </a>
 
-            <img src="/images/magsafe-2-600x600 1.png" alt="" class="product-image">
+            <img src="/images/magsafe.png" alt="" class="product-image">
 
             <div class="details">
               <p>
