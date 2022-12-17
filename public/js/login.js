@@ -45,3 +45,4 @@ $('#btn-customer-login').click(function (e) {
 
     $.ajax(settings);
 });
+
