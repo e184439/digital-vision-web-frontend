@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #F5F5F5;">
+    <%- include('header.ejs'); %>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color: white; padding: 10px; margin: 10px;">
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> First Name <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <input type="text" id="firstName" name="firstName" class="form-control" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Last Name <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <input type="text" id="lastName" name="lastName" class="form-control" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Contact No <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <input type="text" id="contactNo" name="contactNo" class="form-control" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Email <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <input type="text" id="email" name="email" class="form-control" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+        
+
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Password <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <input type="text" id="password" name="password" class="form-control" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Confirm Password <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <input type="text" id="confirmPassword" name="confirmPassword"  class="form-control" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                  
+                 
+                    <div class="row"  style="margin-top: 10px;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <button class="btn btn-primary" id="saveButton" name="saveButton">Save</button>
+                            <button class="btn btn-secondary" id="cancelButton" name="cancelButton">Cancel</button>
+                        </div>            
+                    </div>
+                </div>
+                
+    
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-12">
+                <table class="table" id="data-table">
+                    <thead>
+                        <tr>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>Contact No</td>
+                            <td>Email</td>
+                            <td>Action</td>
+         
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+              
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/admin_user.js"></script>
+</body>
+
+
+</html>

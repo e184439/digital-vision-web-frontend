@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <%- include('header.ejs'); %>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4" style="background-color: white; padding: 10px; margin: 10px;">
+                <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Image 01</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                </div>
+
+                <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Image 02</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                </div>
+
+                <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Image 03</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                </div>
+
+                <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Image 04</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                </div>
+                    
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12" style="background-color: white; padding: 10px; margin: 10px;">
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Product Code <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <input type="text" id="productCode" name="productCode" class="form-control" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Product Name <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <input type="text" id="productName" name="productName" class="form-control" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Brand <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <select class="form-control">
+                                        <option>Select One</option>
+                                    </select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Product Type <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <select class="form-control">
+                                        <option>Select One</option>
+                                    </select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        
+                    </div>
+        
+                    <div class="row"  style="margin-top: 10px;">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Price <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <input type="number" id="price" name="price" class="form-control" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Quantity <span class="mandatory_field">*</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <input type="number" id="quantity" name="quantity" class="form-control" />
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row"  style="margin-top: 10px;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <label> Description</label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <mat-form-field appearance="outline">
+                                    <textarea type="number" id="description" name="description" class="form-control"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+        
+                   
+                    </div>
+                    <div class="row"  style="margin-top: 10px;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <button class="btn btn-primary" id="saveButton" name="saveButton">Save</button>
+                            <button class="btn btn-secondary" id="cancelButton" name="cancelButton">Cancel</button>
+                        </div>            
+                    </div>
+                </div>
+                
+    
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5" style="background-color: white; padding: 10px; margin: 10px;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Brand</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <input type="text" class="form-control" /> </td>
+                            <td>  <button class="btn btn-success btn-sm">Add New</button> </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6" style="background-color: white; padding: 10px; margin: 10px;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Product Type</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <input type="text" class="form-control" /> </td>
+                            <td>  <button class="btn btn-success btn-sm">Add New</button> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Product Code</td>
+                            <td>Product</td>
+                            <td>Price</td>
+                            <td>Brand</td>
+                            <td>ProductType</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+    
+
+</html>
